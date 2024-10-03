@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Structured HTML Document</title>
+</head>
+<body>
+    <h1>HTML Content Organized Point-Wise</h1>
+
+   
+    <h2>1. Anchor Tag Usage Examples</h2>
+    <ol>
+        <li>
+            <p><a href="https://www.abes.ac.in" target="_blank" title="Example">Open ABES website in new tab</a></p>
+        </li>
+        <li>
+            <p><a href="mailto:taniya.vish94@gmail.com" title="Send an email" target="_blank">Send an email</a></p>
+        </li>
+        <li>
+            <p><a href="tel:+917302530950">Call us at +917302530950</a></p>
+        </li>
+        <li>
+            <p><a href="C:\Users\Vishn\Downloads\RecursionTracing-46.pdf" download="recursion" target="_blank">Download the PDF</a></p>
+        </li>
+        <li>
+            <p><a href="butterfly.jpg" download="Butterfly Image" target="_blank">Download the image</a></p>
+        </li>
+        <li>
+            <p><a href="butterfly.jpg" download="Butterfly Image">
+                <img src="butterfly.jpg" width="100px" height="100px" alt="Butterfly"/> Download the image with preview
+            </a></p>
+        </li>
+    </ol>
+
+  
+    <h2>2. Input Fields</h2>
+    <p><label for="email">Email Address:</label>
+    <input type="email" id="email" name="email"/></p>
+
+    
+    <h2>3. Interactive Image with Image Map</h2>
+    <p>The image below contains clickable areas that link to additional information.</p>
+    <img src="butterfly.jpg" alt="Workspace" usemap="#workspace" width="50%" height="50%"/>
+    <map name="workspace">
+        <area 
+            shape="rect"
+            coords="34,44,270,350"
+            alt="Butterfly Info"
+            href="https://en.wikipedia.org/wiki/Butterfly#:~:text=Butterflies%20are%20winged%20insects%20from,and%20a%20conspicuous%2C%20fluttering%20flight."
+            target="_self"/>
+        <area 
+            shape="rect"
+            coords="60,90,220,300"
+            alt="Flower Info"
+            href="https://en.wikipedia.org/wiki/Flower#:~:text=A%20flower%2C%20also%20known%20as,and%20protect%20the%20developing%20flower."
+            target="_self"/>
+    </map>
+
+    <h2>4. Media Elements</h2>
+    <ol>
+        <li>
+            <h3>4.1 Audio Playback</h3>
+            <p>Enjoy the audio clip below.</p>
+            <audio controls autoplay loop muted preload="auto">
+                <source src="butterfly-113600.mp3" type="audio/mp3"/>
+                Your browser does not support audio.
+            </audio>
+        </li>
+        <li>
+            <h3>4.2 Video Playback</h3>
+            <p>Watch the video clip below.</p>
+            <video controls autoplay loop muted preload="auto" width="320px" height="240px">
+                <source src="2616637-hd_1920_1080_30fps.mp4" type="video/mp4"/>
+                Your browser does not support the video tag.
+            </video>
+        </li>
+    </ol>
+    <h2>5. Iframe with Linked Content</h2>
+    <p>Click the link below to open the ABES website in the embedded frame:</p>
+    <ol>
+        <li>
+            <p>
+                <a href="https://www.abes.ac.in" target="frame2">Open link of ABES in the second frame</a>
+            </p>
+        </li>
+    </ol>
+    <!-- Iframe placed directly below the link -->
+    <iframe name="frame2" width="800" height="600" frameborder="1"></iframe>
+
+</body>
+</html>
